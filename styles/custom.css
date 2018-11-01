@@ -63,6 +63,14 @@ code{
     border-radius:5px;
 }
 
+#Reference a{
+    color: dodgerblue;
+}
+#Reference a:hover{
+    color: black;
+    text-decoration: none;
+}
+
 @media( max-width:990px){
     #navbar {
         position: static;
