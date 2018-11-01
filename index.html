@@ -13,7 +13,7 @@
                <a class="nav-link" href="#Introduction"><li>Introduction</li> </a>
                <a class="nav-link" href="#Data_types"><li>Data types</li> </a>
                <a class="nav-link" href="#Variable"><li>Variables</li> </a>
-               <a class="nav-link" href="#Control_statement"><li>Control statement</li> </a>
+               <a class="nav-link" href="#Control_Structures"><li>Control Structures</li> </a>
                <a class="nav-link" href="#Methods"><li>Methods</li> </a>
                <a class="nav-link" href="#Arrays"><li>Arrays</li> </a>
                <a class="nav-link" href="#Object_Oriented_Programming_(OOP)"><li>Object Oriented Programming (OOP)</li> </a>
@@ -72,14 +72,38 @@
                     </p>
                 </article>
             </section>
-            <section class="main-section" id="Control_statement">
-                <header>Control statement</header>
+            <section class="main-section" id="Control_Structures">
+                <header>Control Structures</header>
                 <article>
                     <p>
-                        will add content here
-                    </p>
-                    <p>
-                        will add content here
+                        Control Structures in Java are divided into control statements and  loops.
+                        
+                         <ul>
+                             <li>
+                                <p class="subheadingone">Control statements</p>
+                                <p>
+                                    <ul>
+                                        <li>if</li>
+                                        <li> if...else</li>
+                                        <li>if...else if</li>
+                                        <li>Unitary</li>
+                                        <li>switch</li>
+                                        <li>break</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p class="subheadingone">Loops</p>
+                                <p>
+                                    <ul>
+                                        <li>for loop</li>
+                                        <li> while loop</li>
+                                        <li>do while loop</li>
+                                        <li>tenary loop</li>   
+                                    </ul>
+                                </p>
+                            </li>
+                         </ul> 
                     </p>
                 </article>
             </section>
@@ -87,10 +111,72 @@
                 <header>Methods</header>
                 <article>
                     <p>
-                        will add content here
+                        Methods in some other languages are called subroutines or functions.
                     </p>
                     <p>
-                        will add content here
+                        <ul>    
+                            <li>    
+                                <p class="subheadingone">Syntax of methods</p>
+                                <code>
+    modifier returntype methodname (argument list){
+        statements;
+        ...
+        [return variable];
+    }
+                                </code>
+                                <p> Modifiers determine the scope or accessibility of a class or
+                                    variable, how it can be accessed by the program.
+                                    <ul>
+                                        modifiers are 
+                                        <li>public</li>
+                                        <li>private</li>
+                                        <li>static</li>
+                                        <li>protected</li>
+                                        <li>volatile</li>
+                                        <li>friend</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Return type determines what type of value(data type) will return to where the method was 
+                                    called from.
+                                    <ul>
+                                        Return types are 
+                                        <li>int</li>
+                                        <li>String</li>
+                                        <li>double</li>
+                                        <li>float</li>
+                                        <li>long</li>
+                                        <li>boolean</li>
+                                        <li>char</li>
+                                        <li>void</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Method name is any name you decide to identify your method by.
+                                </p>
+                                <p>
+                                    Arguments are the things you pass into the method that could 
+                                    be made us of inside the method
+                                </p>
+                                <p>Example method for calculating simple interest</p>
+                                <code>
+    public class MethodSimpleInterest{
+        public static void main(String[]args){
+            int principal = 10000;
+            int rate = 2.5;
+            int time = 5;
+            double receivedInterest = modifiedInterest(
+                principal, rate, time);
+            System.out.println("Interest = " + receivedInterest);
+        }
+        public double modifiedInterest(int p, int r, int t){
+            double intval = (p*r*t)/100;
+            return intval;
+        }
+    }
+                                </code>
+                            </li>
+                        </ul>
                     </p>
                 </article>
             </section>
